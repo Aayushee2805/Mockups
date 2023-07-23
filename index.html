@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mockup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <script src="scriptss.js"></script>
+    <a href="https://codepen.io/stoumann/pen/oNzgWMo"></a>
+  </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      
+        <div class="logo_name">Welcome</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="  Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+			<i class="bx bx-home"></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">File Manager</span>
+       </a>
+       <span class="tooltip">Files</span>
+     </li>
+	 <li>
+		<a href="#">
+		  <i class='bx bx-user' ></i>
+		  <span class="links_name">User</span>
+		</a>
+		<span class="tooltip">User</span>
+	  </li>
+	  <li>
+	  <a href="#">
+		<i class='bx bx-notification' ></i>
+		<span class="links_name">Notification</span>
+	  </a>
+	  <span class="tooltip">Notification</span>
+	  </li>
+     <li class="profile">
+		
+         <div class="profile-details"> 
+           <div class="name_job">
+             <div class="logout"><em>Logout</em></div>            
+           </div>
+         </div>
+		 
+         <i class='bx bx-log-out' id="log_out" ></i>
+		 
+     </li>
+
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text"><img src="profile.jpg" alt="profile">
+        <dl style="margin-top:29px; margin-left:99px;"><dt style="font-size: large; font-weight: bold;" >Hello Mike,</dt><dd style="font-weight: 300; font-size: small;">Welcome back</dd></dl>
+        <div> <h4 style="margin-top: 40px; margin-left: 20px; font-weight: 600;">Today</h4></div>
+        <div><dl>
+          <dt style="margin-top: 8px; margin-left: 20px; font-weight: 600; font-size: x-large;">$19,000</dt>
+          <dd style="margin-top: 0; margin-left: 20px; font-size: x-small;">Account Balance</dd>
+          <dt style="margin-top: 8px; margin-left: 20px; font-weight: 600; font-size: medium;">$4,000</dt>
+          <dd style="margin-top: 0; margin-left: 20px; font-size: x-small;">Year to date contribution</dd>
+          <dt style="margin-top: 8px; margin-left: 20px; font-weight: 600; font-size: medium;">$1,000</dt>
+          <dd style="margin-top: 0; margin-left: 20px; font-size: x-small;">Total Interest</dd>
+        </dl></div>
+        <button>I want to <i class='bx bx-caret-down'></i></button>
+        <div> <h4 style="margin-top: 40px; margin-left: 20px; font-weight: 600;">Recent Transactions</h4></div>
+        <div><dl>
+          <dt style="margin-top: 8px; margin-left: 20px; font-weight: 300; font-size: x-small;">2020-08-07</dt>
+          <dd style="margin-top: 0; margin-left: 20px; font-weight: 600; font-size: small;">Withdrawal transfer to Bank XX69</dd>
+          <hr>
+          <dt style="margin-top: 8px; margin-left: 20px; font-weight: 300; font-size: x-small;">2020-08-07</dt>
+          <dd style="margin-top: 0; margin-left: 20px; font-weight: 600; font-size: small;">Withdrawal transfer to Bank XX45</dd>
+          <hr style="border-color: rgb(227, 226, 226);">
+          <dt style="margin-top: 8px; margin-left: 20px; font-weight: 300; font-size: x-small;">2020-08-07</dt>
+          <dd style="margin-top: 0; margin-left: 20px; font-weight: 600; font-size: small;">Withdrawal transfer to Bank XX34</dd>
+          <hr>
+        </dl></div>
+      </div>
+	  <div class="container-two">
+      <div style="color:blue; font-weight: 900; font-size:small; padding-top:25px">Retirement Income</div>
+      <div style=" font-weight: 900; font-size:large; margin-top:2px;">Starting Year 2050</div>
+      <div class="boxes">
+        <div class="box-one"><dt style="margin-top: 8px; margin-left: 20px; font-weight: 600; font-size: x-large;">$3,00,000</dt>
+          <dd style="margin-top: 0; margin-left: 20px; font-size: x-small;">My Goal</dd>
+          </div><hr>
+          <div class="box-two"><dt style="margin-top: 8px; margin-left: 20px; font-weight: 600; font-size: x-large;">59%</dt>
+            <dd style="margin-top: 0; margin-left: 20px; font-size: x-small;">Goal Achieved</dd>
+            </div><hr>
+            <div class="box-three"><dt style="margin-top: 8px; margin-left: 20px; font-weight: 600; font-size: x-large;">$300</dt>
+              <dd style="margin-top: 0; margin-left: 20px; font-size: x-small;">Est. Montly Income</dd>
+              </div>
+      </div>
+      <div style=" font-weight: 900; font-size:medium; padding-top:35px">Contribution Over Time</div>
+        
+      <div>
+        <div>
+          <canvas id="stackedChartID"></canvas>
+      </div>
+    
+    
+      <script>
+    
+          // Get the drawing context on the canvas
+          var myContext = document.getElementById(
+              "stackedChartID").getContext('2d');
+          var myChart = new Chart(myContext, {
+              type: 'bar',
+              data: {
+                  labels: ["20", "25", "30", 
+                      "35", "40", "45"],
+                  datasets: [{
+                      label: 'Employer K 73,500',
+                      backgroundColor: "navy-blue",
+                      data: [8, 10, 14, 16, 19, 20],
+                  }, {
+                      label: 'Employee K 52,500',
+                      backgroundColor: "blue",
+                      data: [8, 10, 14, 16, 19, 20],
+                  }, {
+                      label: 'Total Interest K 224,313',
+                      backgroundColor: "rgb(161, 161, 255)",
+                      data: [8, 10, 14, 16, 19, 20],
+                  }],
+              },
+              options: {
+                  plugins: {
+                      title: {
+                          display: true,
+                          text: ''
+                      },
+                  },
+                  scales: {
+                      x: {
+                          stacked: true,
+                      },
+                      y: {
+                          stacked: true
+                      }
+                  }
+              }
+          });
+      </script>
+      </div>
+      <div>
+        <div style=" font-weight: 900; font-size:medium; padding-top:20px">How do I compare to my peers?</div>
+        <div style=" font-weight: 300; font-size:small; padding-top:3px">These numbers represent current goal achievement</div>
+      <div class="boxes">
+        <div>
+          <dl>
+            <div style="display: flex;">
+              <dt>Age:</dt>
+            <dd>Under30</dd>
+            
+            </div>
+            <hr>
+            <div style="display: flex;">
+            <dt>Salary: </dt>
+            <dd>K20</i></dd>
+            </div><hr>
+            <div style="display: flex;">
+            <dt>Gender: </dt>
+            <dd> Male</dd>
+          </div>
+          </dl>
+        </div>
+        <div class="range-one"><input type="range" min="0" max="25" value="10" style="margin-left:50px;"> 
+          <label for="value">Average</label></div>
+          <div class="range-two"><input type="range" min="0" max="25" value="18" style="margin-left:50px;"> 
+            <label for="value">Top</label></div>
+         
+        
+      
+      </div>
+      </div>
+    </div>
+	  <div class="container-three">
+      <div style="padding-top: 20px; padding-bottom:20px; background-color: rgb(244, 244, 244); height: 400px; width:350px; border-radius: 60px; margin: 20px 50px 0px 20px;">
+       <h2 style=" padding-top:9px; margin-left: 50px; font-size: medium; font-weight: 600;">Retirement Strategy</h2>
+       <h5 style=" padding-top:19px; margin-left: 50px; font-size: small; font-weight: 600;">Retirement Contribution</h5>
+       <input type="range" min="0" max="25" value="12" style="margin-left:50px;"> <label for="value">12%</label>
+       <h5 style=" padding-top:19px; margin-left: 50px; font-size: small; font-weight: 600;">Retirement Age</h5>
+       <input type="range" min="0" max="100" value="65" style="margin-left:50px;"> <label for="age">65</label><hr>
+       <h5 style=" padding-top:19px; margin-left: 50px; font-size: small; font-weight: 600;">Employee Contribution </h5>
+       <h5 style=" padding-top:19px; margin-left: 50px; font-size: small; font-weight: 600;">Interest Rate</h5>
+       <button style="padding: 0;
+       margin: 20px 50px;
+       background-color: blue;
+       height: 10%;
+       width:70%;
+       font-size: large;
+       border-radius: 12px;
+       color:white; 
+       border:none;">Update</button>
+       <a href="#">View Help Docs<i class='bx bx-chevron-right'></i> </a>
+      </div>
+    </div>
+  </section>
+  <script>
+	let sidebar = document.querySelector(".sidebar");
+let closeBtn = document.querySelector("#btn");
+let searchBtn = document.querySelector(".bx-search");
+
+closeBtn.addEventListener("click", ()=>{
+sidebar.classList.toggle("open");
+menuBtnChange();//calling the function(optional)
+});
+
+searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+sidebar.classList.toggle("open");
+menuBtnChange(); //calling the function(optional)
+});
+
+// following are the code to change sidebar button(optional)
+function menuBtnChange() {
+if(sidebar.classList.contains("open")){
+ closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+}else {
+ closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+}
+}
+
+</script> 
+  
+</body>
+</html>
